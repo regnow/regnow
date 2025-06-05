@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIRASIA REDRUN 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :host {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: Inter, Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    pre {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em
+    }
+
+    textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        font-family: Inter, sans-serif;
+        color: var(--text-dark);
+        scroll-behavior: smooth
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Poppins, sans-serif
+    }
+    body {
+      background-color: #f9f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 70px; /* space for fixed navbar */
+    }
+
+    .ticket-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+
+    .ticket-card.highlight {
+      background-color: #c7ffe48c;
+      border-color: #05e578cc;
+    }
+
+    .ticket-title {
+      font-weight: 600;
+    }
+
+    .ticket-sub {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+
+    .cart-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .event-card {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 10px;
+    }
+
+    .select-btn {
+      background-color: #000;
+      color: #fff;
+      border: none;
+    }
+
+    .select-btn:hover {
+      background-color: #333;
+    }
+
+    .form-select {
+      width: auto;
+      display: inline-block;
+    }
+
+    .ticket-select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .cancel-link {
+      font-size: 0.85rem;
+      color: red;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: #000;
+      background-color: #ed1c24;
+      border-color: #e83f46;
+      color: #ffffff
+    }
+    .btn-primary:hover {
+      background-color: #c51a1f;
+      border-color: #b3171c;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<title>Event Olahraga - RegNowOnline</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #ed1c24;
+            --primary-light: rgba(237, 28, 36, 0.1);
+            --secondary: #6c757d;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f5f7fa;
+        }
+        
+        /* Modern Navbar */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.5rem;
+        }
+        
+        .navbar-brand span {
+            color: var(--primary);
+        }
+        
+        /* Ultra Modern Hero */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #000000 0%, #3a3a3a 100%);
+            color: white;
+            padding: 6rem 0;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://media.istockphoto.com/id/496719837/photo/motivation-fuels-the-human-engine.jpg?s=612x612&w=0&k=20&c=kz5YL7dYzmQpbRTbEafeFshJ3nSslVoJ5Hypf0uxYzI=') center/cover;
+            opacity: 0.7;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-title {
+            font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        
+        .search-box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50px;
+            padding: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .search-input {
+            border: none;
+            background: transparent;
+            padding: 12px 20px;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .search-btn {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 500;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .search-btn:hover {
+            background-color: #d0181f;
+            transform: translateY(-2px);
+        }
+        
+        /* Event Cards */
+        .event-card {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(237, 28, 36, 0.15);
+        }
+        
+        .event-img {
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .event-card:hover .event-img {
+            transform: scale(1.05);
+        }
+        
+        .event-date {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 2;
+        }
+        
+        .event-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: white;
+            color: var(--primary);
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 2;
+        }
+        
+        .price-tag {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 0.6rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #d0181f;
+            border-color: #d0181f;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            border-radius: 50px;
+            font-weight: 500;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Modern Section Heading */
+        .section-heading {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .section-heading h2 {
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(237, 28, 36, 0.3);
+            z-index: 100;
+            transition: all 0.3s;
+        }
+        
+        .fab:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(237, 28, 36, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>Reg</span>NowOnline
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ultra Modern Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Temukan Pengalaman <span style="color:#ed1c24">Event Olahraga</span> Terbaik</h1>
+                    <p class="hero-subtitle">Daftar untuk event lari, bersepeda, dan olahraga lainnya di seluruh Indonesia. Nikmati kemudahan pembelian tiket dalam beberapa klik.</p>
+                    
+                    <div class="search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" placeholder="Cari event olahraga...">
+                            <button class="btn search-btn" type="button">
+                                <i class="bi bi-search me-2"></i>Cari
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <h4 class="fw-bold mb-0">500+</h4>
+                            <small>Event Tersedia</small>
+                        </div>
+                        <div class="me-4">
+                            <h4 class="fw-bold mb-0">50K+</h4>
+                            <small>Peserta</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">100+</h4>
+                            <small>Penyelenggara</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container py-5 mt-5">
+        <div class="section-heading">
+            <h2>Event Populer</h2>
+        </div>
+        
+        <div class="row">
+            <!-- Event Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card event-card h-100">
+                    <div class="position-relative">
+                        <img src="https://airasiaredrun.com/assets/images/banner.jpg" class="card-img-top event-img" alt="Jakarta Marathon">
+                        <div class="event-date">15 Jul 2025</div>
+                        <div class="event-category">Lari</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-primary-light text-primary rounded-pill">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Bali
+                            </span>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title fw-bold">AIRASIA REDRUN 2025</h5>
+                        <p class="card-text text-secondary">Lari marathon tahunan di pulau surga dengan rute menari dan berbagai kategori peserta.</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div>
+                                <span class="price-tag">Rp 250.000</span>
+                                <span class="text-secondary ms-2"><s>Rp 300.000</s></span>
+                            </div>
+                            <a href="select.html" class="btn btn-sm btn-primary">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card event-card h-100">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80" class="card-img-top event-img" alt="Tour de Jakarta">
+                        <div class="event-date">22 Agu 2025</div>
+                        <div class="event-category">Bersepeda</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-primary-light text-primary rounded-pill">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Jakarta
+                            </span>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title fw-bold">Tour de Jakarta 2025</h5>
+                        <p class="card-text text-secondary">Event bersepeda santai sejauh 50km mengelilingi Jakarta dengan berbagai kategori peserta.</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div>
+                                <span class="price-tag">Rp 180.000</span>
+                                <span class="text-success ms-2">Early Bird</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary" disabled>Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card event-card h-100">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top event-img" alt="Triathlon">
+                        <div class="event-date">10 Sep 2025</div>
+                        <div class="event-category">Triathlon</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-primary-light text-primary rounded-pill">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Jakarta
+                            </span>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title fw-bold">Jakarta International Triathlon</h5>
+                        <p class="card-text text-secondary">Kompetisi triathlon internasional dengan rute renang, sepeda, dan lari di kawasan Ancol.</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div>
+                                <span class="price-tag">Rp 500.000</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary" disabled>Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <a href="#" class="fab">
+        <i class="bi bi-ticket-perforated"></i>
+    </a>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
