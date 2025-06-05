@@ -156,7 +156,7 @@
   <nav class="navbar navbar-light bg-white shadow-sm fixed-top">
     <div class="container d-flex justify-content-center align-items-center">
       <a class="navbar-brand text-center" href="#">
-        <img src="https://regnowonline.co.id/imgV3/f7.png" alt="Merapi Run Logo" style="height: 40px;">
+        <img src="logo_regnow.png" alt="Merapi Run Logo" style="height: 40px;">
       </a>
     </div>
   </nav>
@@ -171,255 +171,53 @@
 
       <!-- Tab -->
       <div class="col-sm-12 bg-white rounded-3 shadow-sm px-3 py-3">
-          <ul class="nav nav-tabs mb-3" id="ticketTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button" role="tab">Ticket</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="peserta-tab" data-bs-toggle="tab" data-bs-target="#peserta" type="button" role="tab">Peserta</button>
-            </li>
-          </ul>
-
-          <div class="tab-content" id="ticketTabContent">
-            <!-- Tab Ticket -->
-            <div class="tab-pane fade show active" id="ticket" role="tabpanel">
-              <!-- Tickets -->
-              <div class="ticket-card highlight">
-                <div class="ticket-select">
-                  <div>
-                    <div class="ticket-title">5 K (Early Bird)</div>
-                    <div>Rp 675.000</div>
-                    <div class="ticket-sub">Price Ticket For 4 Person<br>Price Excluding Admin Bank Fee</div>
-                  </div>
-                  <button class="btn select-btn">Select</button>
+            <!-- Tickets -->
+            <h2>Ticket</h2>
+            <div class="ticket-card highlight">
+              <div class="ticket-select">
+                <div>
+                  <div class="ticket-title">5 K (Early Bird)</div>
+                  <div>Rp 675.000</div>
+                  <div class="ticket-sub">Price Ticket For 4 Person<br>Price Excluding Admin Bank Fee</div>
                 </div>
+                <button class="btn select-btn">Select</button>
               </div>
-
-              <div class="ticket-card">
-                <div class="ticket-select">
-                  <div>
-                    <div class="ticket-title">10 K (Normal)</div>
-                    <div>Rp 750.000</div>
-                    <div class="ticket-sub">Price Ticket For 4 Person<br>Price Excluding Admin Bank Fee</div>
-                  </div>
-                  <button class="btn select-btn">Select</button>
-                </div>
-              </div>
-
-              <div class="ticket-card">
-                <div class="ticket-select">
-                  <div>
-                    <div class="ticket-title">21K/Half Marathon (Normal)</div>
-                    <div>Rp 190.000</div>
-                    <div class="ticket-sub">Price Ticket For 1 Person<br>Price Excluding Admin Bank Fee</div>
-                  </div>
-                  <select class="form-select">
-                    <option>0 Ticket</option>
-                    <option>1 Ticket</option>
-                    <option>2 Ticket</option>
-                    <option selected>3 Ticket</option>
-                    <option>4 Ticket</option>
-                    <option>5 Ticket</option>
-                    <option>6 Ticket</option>
-                    <option>7 Ticket</option>
-                    <option>8 Ticket</option>
-                    <option>9 Ticket</option>
-                    <option>10 Ticket</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- More ticket types here -->
-              <!-- You can duplicate ticket-card for 5K, 10K, 21K -->
             </div>
 
-            <!-- Tab Peserta -->
-            <div class="tab-pane fade" id="peserta" role="tabpanel">
-                    <style>
-                        /* .dataTables_wrapper {
-                          margin-top: 20px;
-                      } */
-                      /* .table-responsive {
-                          background-color: white;
-                          border-radius: 8px;
-                          box-shadow: 0 0 10px rgba(0,0,0,0.05);
-                          padding: 20px;
-                      } */
-                      /* .table thead th {
-                          background-color: #343a40;
-                          color: white;
-                      } */
-                      .badge-10k {
-                          background-color: #28a745;
-                      }
-                      .badge-21k {
-                          background-color: #007bff;
-                      }
-                      .badge-3k {
-                          background-color: #6c757d;
-                      }
-                  </style>
-                  <div class="table-responsive rounded-3">
-                      <table id="participantTable" class="table table-hover" style="width:100%">
-                          <thead>
-                              <tr>
-                                  <th>No</th>
-                                  <th>Nama</th>
-                                  <th>Kategori</th>
-                                  <th>Domisili</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr><td>1</td><td>AAN BUDIONO</td><td><span class="badge badge-10k">10K</span></td><td>BANTUL</td></tr>
-                              <tr><td>2</td><td>AAN TOPANI</td><td><span class="badge badge-10k">10K</span></td><td>GONDOKUSUMAN</td></tr>
-                              <tr><td>3</td><td>AGUSTINUS SIGIT DWI SIGIT DWI</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>4</td><td>ALMUKARAM ALMUKARAM</td><td><span class="badge badge-10k">10K</span></td><td>TANGERANG</td></tr>
-                              <tr><td>5</td><td>ANDIKA PRASETYO</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>6</td><td>ANDI NIWAN SUGIYANTO</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>7</td><td>ANDRI YANTI</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>8</td><td>ANISA QORINA</td><td><span class="badge badge-10k">10K</span></td><td>MAGETAN</td></tr>
-                              <tr><td>9</td><td>ARYA WIRAWAN AWING</td><td><span class="badge badge-10k">10K</span></td><td>DUKUH PAKIS</td></tr>
-                              <tr><td>10</td><td>AZKA JAVAS NARARYA</td><td><span class="badge badge-10k">10K</span></td><td>KOTA SEMARANG</td></tr>
-                              <tr><td>11</td><td>BAGUS RUSDIANTO</td><td><span class="badge badge-10k">10K</span></td><td>SURABAYA</td></tr>
-                              <tr><td>12</td><td>BAMBANG TRIAMBODO</td><td><span class="badge badge-10k">10K</span></td><td>KOTA SEMARANG</td></tr>
-                              <tr><td>13</td><td>BERNADETHA LARAS AYU</td><td><span class="badge badge-10k">10K</span></td><td>KOTA YOGYAKARTA</td></tr>
-                              <tr><td>14</td><td>CAESILIA ANINDITA</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>15</td><td>DESI YS</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA BARAT</td></tr>
-                              <tr><td>16</td><td>DZAKI MAULANA SUMANTRI</td><td><span class="badge badge-10k">10K</span></td><td>SOUTH TANGERANG</td></tr>
-                              <tr><td>17</td><td>EDI JUNAEDI SALAM</td><td><span class="badge badge-10k">10K</span></td><td>MAJALENGKA</td></tr>
-                              <tr><td>18</td><td>ELGA PUTRI</td><td><span class="badge badge-10k">10K</span></td><td>BANTUL</td></tr>
-                              <tr><td>19</td><td>FAHTUR GALIH F</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>20</td><td>FAKHRI ALARIK PUTRI</td><td><span class="badge badge-10k">10K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>21</td><td>FAMA ARYANI</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>22</td><td>FARIEQ FADLOLI</td><td><span class="badge badge-10k">10K</span></td><td>KEBUMEN</td></tr>
-                              <tr><td>23</td><td>FARIS HAIKAL HASHFI</td><td><span class="badge badge-10k">10K</span></td><td>KLATEN</td></tr>
-                              <tr><td>24</td><td>FATKHUR ROHMAN</td><td><span class="badge badge-10k">10K</span></td><td>KABUPATEN WONOSOBO</td></tr>
-                              <tr><td>25</td><td>FEBIA KUSUMAWARDANI</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>26</td><td>FIKA FEBRIYANA</td><td><span class="badge badge-10k">10K</span></td><td>KABUPATEN PURBALINGGA</td></tr>
-                              <tr><td>27</td><td>GATOT WIDJAJA TJIPTO</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>28</td><td>HARJIMAN HARJIMAN</td><td><span class="badge badge-10k">10K</span></td><td>TANGERANG SELATAN</td></tr>
-                              <tr><td>29</td><td>ICHSAN AVERUSHYD</td><td><span class="badge badge-10k">10K</span></td><td>KOTA YOGYAKARTA</td></tr>
-                              <tr><td>30</td><td>KENDRY LIM</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>31</td><td>KEVIN RAYHAN ICHSAN</td><td><span class="badge badge-10k">10K</span></td><td>TANGERANG SELATAN</td></tr>
-                              <tr><td>32</td><td>KHAIRUL AZMI</td><td><span class="badge badge-10k">10K</span></td><td>CILACAP</td></tr>
-                              <tr><td>33</td><td>KHRISNA WAHYU</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>34</td><td>KOHARUDDIN ABDI</td><td><span class="badge badge-10k">10K</span></td><td>MAGELANG</td></tr>
-                              <tr><td>35</td><td>KOMANG LIDYANI</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA SELATAN</td></tr>
-                              <tr><td>36</td><td>KRISTIANTO WIDODO</td><td><span class="badge badge-10k">10K</span></td><td>KLATEN</td></tr>
-                              <tr><td>37</td><td>LATISYA TIARA</td><td><span class="badge badge-10k">10K</span></td><td>KULONPROGO</td></tr>
-                              <tr><td>38</td><td>LIM CHRISTIANSEN</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>39</td><td>M ROMADLANA AL AZIZ</td><td><span class="badge badge-10k">10K</span></td><td>SRAGEN</td></tr>
-                              <tr><td>40</td><td>M SYIDIK HIDAYAT</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>41</td><td>MUHAMAD ADNAN ROYANDI</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>42</td><td>MUHAMMAD PRASETYAWAN</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>43</td><td>MUHAMMAD SABILILLAH</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>44</td><td>MUHAMMAD SHOLAHUDDIN YUSUF SYAIFULLAH</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>45</td><td>NAMIRA AULIA</td><td><span class="badge badge-10k">10K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>46</td><td>NOVIAN WIDIADHARMA</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>47</td><td>NUR SHOFAH</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA UTARA</td></tr>
-                              <tr><td>48</td><td>PASCHALIS KURNIAWAN SANJAYA</td><td><span class="badge badge-10k">10K</span></td><td>KAB. PURWOREJO</td></tr>
-                              <tr><td>49</td><td>RAMINA RAMINA</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA SELATAN</td></tr>
-                              <tr><td>50</td><td>RIANA JULITA</td><td><span class="badge badge-10k">10K</span></td><td>SALATIGA</td></tr>
-                              <tr><td>51</td><td>SEPTI RAHARJO</td><td><span class="badge badge-10k">10K</span></td><td>BANTUL</td></tr>
-                              <tr><td>52</td><td>SRI HADI</td><td><span class="badge badge-10k">10K</span></td><td>SURABAYA</td></tr>
-                              <tr><td>53</td><td>SUMADI SUMADI</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>54</td><td>TARMONO TARMONO</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>55</td><td>TOPHAN HERI WIBOWO</td><td><span class="badge badge-10k">10K</span></td><td>BANJARNEGARA</td></tr>
-                              <tr><td>56</td><td>TRI PUTRA</td><td><span class="badge badge-10k">10K</span></td><td>MAGELANG</td></tr>
-                              <tr><td>57</td><td>UNGGUL TRIAJI</td><td><span class="badge badge-10k">10K</span></td><td>PURWOKERTO</td></tr>
-                              <tr><td>58</td><td>WIDYA WULANDARI</td><td><span class="badge badge-10k">10K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>59</td><td>WINRES PRIAMBODO</td><td><span class="badge badge-10k">10K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>60</td><td>YOSUA YORDAN</td><td><span class="badge badge-10k">10K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>61</td><td>BERRI DWI PUTRA</td><td><span class="badge badge-10k">10K</span></td><td>KLATEN</td></tr>
-                              <tr><td>62</td><td>DONNY WIDODO</td><td><span class="badge badge-10k">10K</span></td><td>DEPOK</td></tr>
-                              <tr><td>63</td><td>ELLYZABETH SUGIHARTO</td><td><span class="badge badge-10k">10K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>64</td><td>FEKA ANGGE PRAMITA</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA PUSAT</td></tr>
-                              <tr><td>65</td><td>IINDAH YUNIARTI</td><td><span class="badge badge-10k">10K</span></td><td>MAGELANG</td></tr>
-                              <tr><td>66</td><td>IRMA HANDAYANI</td><td><span class="badge badge-10k">10K</span></td><td>DEPOK</td></tr>
-                              <tr><td>67</td><td>IVENA DAMARA</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA SELATAN</td></tr>
-                              <tr><td>68</td><td>MUHAMMAD HUDA</td><td><span class="badge badge-10k">10K</span></td><td>MAGELANG</td></tr>
-                              <tr><td>69</td><td>NARENDRA YUDHISTIRA</td><td><span class="badge badge-10k">10K</span></td><td>KOTA YOGYAKARTA</td></tr>
-                              <tr><td>70</td><td>NICKO ARYWIBOWO</td><td><span class="badge badge-10k">10K</span></td><td>JAKARTA PUSAT</td></tr>
-                              <tr><td>71</td><td>TOMY PRASETYO MANUNGGAL</td><td><span class="badge badge-10k">10K</span></td><td>BATAM</td></tr>
-                              <tr><td>72</td><td>ZENDY SATYA NINGRUM</td><td><span class="badge badge-10k">10K</span></td><td>KULONPROGO</td></tr>
-                              <tr><td>73</td><td>ALFITO DEANNOVA</td><td><span class="badge badge-21k">21K</span></td><td>KLATEN</td></tr>
-                              <tr><td>74</td><td>ANTONIUS SIMBOLON</td><td><span class="badge badge-21k">21K</span></td><td>JAKARTA TIMUR</td></tr>
-                              <tr><td>75</td><td>ARIF SETYO ADINUGROHO ADINUGROHO</td><td><span class="badge badge-21k">21K</span></td><td>WONOSOBO</td></tr>
-                              <tr><td>76</td><td>BENI FITRIANTOKO</td><td><span class="badge badge-21k">21K</span></td><td>MAGELANG</td></tr>
-                              <tr><td>77</td><td>BUDI GUNARSO</td><td><span class="badge badge-21k">21K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>78</td><td>BUNARWAN PRIHARGONO</td><td><span class="badge badge-21k">21K</span></td><td>KARANGANYAR</td></tr>
-                              <tr><td>79</td><td>DWARESPA EVON GITSAMADHI</td><td><span class="badge badge-21k">21K</span></td><td>KLATEN</td></tr>
-                              <tr><td>80</td><td>FIRRAR WIDAYAT</td><td><span class="badge badge-21k">21K</span></td><td>BALIKPAPAN</td></tr>
-                              <tr><td>81</td><td>GALIH JANUAR WIRA WICAKSANA</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>82</td><td>GUNTUR DHARMA</td><td><span class="badge badge-21k">21K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>83</td><td>HERU SUCAHYO</td><td><span class="badge badge-21k">21K</span></td><td>PURWOREJO</td></tr>
-                              <tr><td>84</td><td>IRYAWAN IRYAWAN</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>85</td><td>ISWANDI ISWANDI</td><td><span class="badge badge-21k">21K</span></td><td>KULON PROGO</td></tr>
-                              <tr><td>86</td><td>JIMMY FERNANDO</td><td><span class="badge badge-21k">21K</span></td><td>MUSI BANYUASIN</td></tr>
-                              <tr><td>87</td><td>KIKI CANDRA</td><td><span class="badge badge-21k">21K</span></td><td>KLATEN</td></tr>
-                              <tr><td>88</td><td>MARGARETA FEBY RATNA SARI</td><td><span class="badge badge-21k">21K</span></td><td>JAKARTA TIMUR</td></tr>
-                              <tr><td>89</td><td>MOHAMAD FEBRIAN SYUKUR</td><td><span class="badge badge-21k">21K</span></td><td>JAKARTA PUSAT</td></tr>
-                              <tr><td>90</td><td>MOKHAMMAD ISNAENI</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>91</td><td>MUHAMMAD SAKTI</td><td><span class="badge badge-21k">21K</span></td><td>PATI</td></tr>
-                              <tr><td>92</td><td>NOVRIANSYAH ROSYID</td><td><span class="badge badge-21k">21K</span></td><td>KABUPATEN SLEMAN</td></tr>
-                              <tr><td>93</td><td>PIPIN ANDREAN</td><td><span class="badge badge-21k">21K</span></td><td>WONOGIRI</td></tr>
-                              <tr><td>94</td><td>RIYANDI BAGUS</td><td><span class="badge badge-21k">21K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>95</td><td>RUDY PRAYITNO</td><td><span class="badge badge-21k">21K</span></td><td>KLATEN</td></tr>
-                              <tr><td>96</td><td>SARJIYA SARJIYA</td><td><span class="badge badge-21k">21K</span></td><td>BANTUL</td></tr>
-                              <tr><td>97</td><td>SETYO ADI WIBOWO</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>98</td><td>SIGIT WIBOWO</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>99</td><td>TOSSY MURWANTO</td><td><span class="badge badge-21k">21K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>100</td><td>ULTAMAS EKA RAHMAWAN</td><td><span class="badge badge-21k">21K</span></td><td>JAKARTA BARAT</td></tr>
-                              <tr><td>101</td><td>VIVI OKTARUNA</td><td><span class="badge badge-21k">21K</span></td><td>BANDUNG</td></tr>
-                              <tr><td>102</td><td>YOHAN FAJAR SIDIK</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>103</td><td>ADITYA SURYAPUTRA</td><td><span class="badge badge-21k">21K</span></td><td>YOGYAKARTA</td></tr>
-                              <tr><td>104</td><td>AFNI NUR ANITA</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>105</td><td>AKHMAD SYAFII</td><td><span class="badge badge-21k">21K</span></td><td>KEBUMEN</td></tr>
-                              <tr><td>106</td><td>DANIEL PETZ</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>107</td><td>DENNY HS</td><td><span class="badge badge-21k">21K</span></td><td>BANTUL</td></tr>
-                              <tr><td>108</td><td>FERDINANDA TAPILAHA</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>109</td><td>MUBARI YPH</td><td><span class="badge badge-21k">21K</span></td><td>BATANG</td></tr>
-                              <tr><td>110</td><td>NABILA CHININTYA WIDHIANTIWI</td><td><span class="badge badge-21k">21K</span></td><td>DEPOK</td></tr>
-                              <tr><td>111</td><td>NIKO PUNTA ARSWENDO</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>112</td><td>RAHMA WATI</td><td><span class="badge badge-21k">21K</span></td><td>BOGOR</td></tr>
-                              <tr><td>113</td><td>RUDY KOESHARDIJANTO</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>114</td><td>SANDI KURNIAWAN</td><td><span class="badge badge-21k">21K</span></td><td>JAKARTA SELATAN</td></tr>
-                              <tr><td>115</td><td>TJIE MEY LIE</td><td><span class="badge badge-21k">21K</span></td><td>SLEMAN</td></tr>
-                              <tr><td>116</td><td>WAKHID ASHARI</td><td><span class="badge badge-21k">21K</span></td><td>KLATEN</td></tr>
-                              <tr><td>117</td><td>YANITA SARI</td><td><span class="badge badge-21k">21K</span></td><td>CIKARANG UTARA</td></tr>
-                              <tr><td>118</td><td>ADIL MUMPUNI PRIMASANI</td><td><span class="badge badge-3k">3K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>119</td><td>ADITYA WARDHANA</td><td><span class="badge badge-3k">3K</span></td><td>SEMARANG</td></tr>
-                              <tr><td>120</td><td>AIRAZITA NATHANIA WARDHANA</td><td><span class="badge badge-3k">3K</span></td><td>SEMARANG</td></tr>
-                          </tbody>
-                      </table>
-                  </div>
-                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-                  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-                  <script>
-                      $(document).ready(function() {
-                          $('#participantTable').DataTable({
-                              responsive: true,
-                              pageLength: 10,
-                              lengthMenu: [10, 25, 50, 100],
-                              language: {
-                                  //search: "Cari:",
-                                  // lengthMenu: "Tampilkan _MENU_ data per halaman",
-                                  // info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ peserta",
-                                  // infoEmpty: "Menampilkan 0 sampai 0 dari 0 peserta",
-                                  //infoFiltered: "(disaring dari _MAX_ total peserta)",
-                                  // paginate: {
-                                  //     first: "Pertama",
-                                  //     last: "Terakhir",
-                                  //     next: "Berikutnya",
-                                  //     previous: "Sebelumnya"
-                                  // }
-                              }
-                          });
-                      });
-                  </script>
+            <div class="ticket-card">
+              <div class="ticket-select">
+                <div>
+                  <div class="ticket-title">10 K (Normal)</div>
+                  <div>Rp 750.000</div>
+                  <div class="ticket-sub">Price Ticket For 4 Person<br>Price Excluding Admin Bank Fee</div>
+                </div>
+                <button class="btn select-btn">Select</button>
+              </div>
             </div>
-          </div>
+
+            <div class="ticket-card">
+              <div class="ticket-select">
+                <div>
+                  <div class="ticket-title">21K/Half Marathon (Normal)</div>
+                  <div>Rp 190.000</div>
+                  <div class="ticket-sub">Price Ticket For 1 Person<br>Price Excluding Admin Bank Fee</div>
+                </div>
+                <select class="form-select">
+                  <option>0 Ticket</option>
+                  <option>1 Ticket</option>
+                  <option>2 Ticket</option>
+                  <option selected>3 Ticket</option>
+                  <option>4 Ticket</option>
+                  <option>5 Ticket</option>
+                  <option>6 Ticket</option>
+                  <option>7 Ticket</option>
+                  <option>8 Ticket</option>
+                  <option>9 Ticket</option>
+                  <option>10 Ticket</option>
+                </select>
+              </div>
+            </div>
+              
       </div>
     </div>
 
